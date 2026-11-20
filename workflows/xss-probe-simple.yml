@@ -1,9 +1,0 @@
-name: xssprobe1811"><svg>
-on:
-  push:
-    branches: [ main ]
-jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "probe"
