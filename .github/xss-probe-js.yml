@@ -1,9 +1,9 @@
-name: javascript:alert(1)
+name: xssprobe1811">javascript:alert(1)
 on:
   push:
     branches: [ main ]
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "probe"
+      - run: echo "javascript payload"
